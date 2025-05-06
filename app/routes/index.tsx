@@ -39,7 +39,7 @@ function Home() {
             </div>
             <div className="flex justify-center">
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src="/dist/background.png"
                 width={400}
                 height={400}
                 alt="Business dashboard"
