@@ -15,7 +15,7 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-600">
               <Mail className="h-4 w-4 text-blue-600" />
-              <span>info@limostore.com</span>
+              <span>info@limo.com</span>
             </div>
           </div>
           <div className="flex items-center gap-4">
@@ -45,7 +45,7 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 w-full border-b bg-white">
         <div className="container flex h-16 items-center justify-between gap-4">
           <Link to="/" className="text-2xl font-bold text-blue-600" activeProps={{ className: 'font-extrabold text-blue-700 underline' }} activeOptions={{ exact: true }}>
-            LimoStore
+            Limo
           </Link>
           <nav className="hidden items-center gap-6 md:flex">
             <Link
