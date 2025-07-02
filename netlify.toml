@@ -1,9 +1,8 @@
 [build]
   command = "npm run build"
-  environment = { NODE_VERSION = "18" }
 
-# Default environment variables for the build process
 [build.environment]
+  NODE_VERSION = "18"
   NITRO_PRESET = "netlify"
 
 # Production environment-specific settings
