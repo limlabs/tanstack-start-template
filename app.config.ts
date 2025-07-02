@@ -1,25 +1,20 @@
-import { defineConfig } from '@tanstack/react-start/config'
+import { defineConfig } from 'vite'
 import tsConfigPaths from 'vite-tsconfig-paths'
 import * as path from 'path'
 
 export default defineConfig({
-  vite: {
-    plugins: [
-      tsConfigPaths({
-        projects: ['./tsconfig.json'],
-      }),
-    ],
-    build: {
+  plugins: [tsConfigPaths()],
+  build: {
       manifest: true,
       assetsDir: 'assets',
       rollupOptions: {
         output: {
-          assetFileNames: ({ name }) => {
+          assetFileNames: ({ name }: { name?: string }) => {
             const baseName = name ? path.parse(name).name : 'asset'
             return `assets/${baseName}-[hash][extname]`
           },
         },
       },
-    },
-  },
+    }
+  }
 })
